@@ -19,11 +19,10 @@ public class SingleResponsibility1 {
         vehicle.run("汽车");
         vehicle.run("飞机");
     }
-}
-
-class  Vehicle{
-    void run(String vehicle) {
-        System.out.println(vehicle + " 在公路上运行....");
+    private static class  Vehicle{
+        void run(String vehicle) {
+            System.out.println(vehicle + " 在公路上运行....");
+        }
     }
 }
 

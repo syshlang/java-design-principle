@@ -24,22 +24,22 @@ public class SingleResponsibility2 {
         WaterVehicle waterVehicle = new WaterVehicle();
         waterVehicle.run("轮船");
     }
-}
+    private static class RoadVehicle {
+        void run(String vehicle) {
+            System.out.println(vehicle + "公路运行");
+        }
+    }
 
-class RoadVehicle {
-    void run(String vehicle) {
-        System.out.println(vehicle + "公路运行");
+    private static class AirVehicle {
+        void run(String vehicle) {
+            System.out.println(vehicle + "天空运行");
+        }
+    }
+
+    private static class WaterVehicle {
+        void run(String vehicle) {
+            System.out.println(vehicle + "水中运行");
+        }
     }
 }
 
-class AirVehicle {
-    void run(String vehicle) {
-        System.out.println(vehicle + "天空运行");
-    }
-}
-
-class WaterVehicle {
-    void run(String vehicle) {
-        System.out.println(vehicle + "水中运行");
-    }
-}

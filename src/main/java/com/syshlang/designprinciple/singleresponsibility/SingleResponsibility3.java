@@ -19,17 +19,18 @@ public class SingleResponsibility3 {
         vehicleCommon.runAir("飞机");
         vehicleCommon.runWater("轮船");
     }
+    private static class VehicleCommon {
+        public void runRoad(String vehicle) {
+            System.out.println(vehicle + " 在公路上运行....");
+
+        }
+        public void runAir(String vehicle) {
+            System.out.println(vehicle + " 在天空上运行....");
+        }
+        public void runWater(String vehicle) {
+            System.out.println(vehicle + " 在水中行....");
+        }
+    }
+
 }
 
-class VehicleCommon {
-    public void runRoad(String vehicle) {
-        System.out.println(vehicle + " 在公路上运行....");
-
-    }
-    public void runAir(String vehicle) {
-        System.out.println(vehicle + " 在天空上运行....");
-    }
-    public void runWater(String vehicle) {
-        System.out.println(vehicle + " 在水中行....");
-    }
-}
