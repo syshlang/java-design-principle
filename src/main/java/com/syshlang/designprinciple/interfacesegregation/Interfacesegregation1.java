@@ -14,27 +14,28 @@ package com.syshlang.designprinciple.interfacesegregation;
  */
 public class Interfacesegregation1 {
     public static void main(String[] args) {
-        D d = new D();
-        d.dependC(new C());
+        B b = new B();
+        b.dependC(new A());
+    }
+    private interface InterfaceA{
+        void methodA();
+    }
+
+    private interface InterfaceOther{
+        void methodOther();
+    }
+
+    private static class A implements InterfaceA{
+        public void methodA() {
+            System.out.println("A类方法");
+        }
+    }
+
+    private static class B {
+        public void dependC(InterfaceA interfaceA){
+            System.out.println("通过最小接口依赖A类调用A类方法");
+        }
     }
 }
 
-interface InterfaceC{
-    void methodC();
-}
 
-interface InterfaceOther{
-    void methodOther();
-}
-
-class C implements InterfaceC{
-    public void methodC() {
-        System.out.println("C类方法");
-    }
-}
-
-class D {
-    public void dependC(InterfaceC interfaceC){
-        System.out.println("通过最小接口依赖C类调用C类方法");
-    }
-}

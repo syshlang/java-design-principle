@@ -17,26 +17,27 @@ public class Interfacesegregation {
         B b = new B();
         b.dependA(new A());
     }
-}
-
-interface InterfaceCommon{
-    void methodA();
-    void methodOther();
-}
-
-
-class A implements InterfaceCommon{
-    public void methodA() {
-        System.out.println("A类方法");
+    interface InterfaceCommon{
+        void methodA();
+        void methodOther();
     }
 
-    public void methodOther() {
-        System.out.println("其他类方法");
+
+    private static class A implements InterfaceCommon{
+        public void methodA() {
+            System.out.println("A类方法");
+        }
+
+        public void methodOther() {
+            System.out.println("其他类方法");
+        }
+    }
+
+    private static class B {
+        public void dependA(InterfaceCommon interfaceCommon){
+            System.out.println("通过公共接口依赖A类调用A类方法");
+        }
     }
 }
 
-class B {
-    public void dependA(InterfaceCommon interfaceCommon){
-        System.out.println("通过公共接口依赖A类调用A类方法");
-    }
-}
+
