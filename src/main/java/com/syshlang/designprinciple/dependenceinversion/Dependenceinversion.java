@@ -18,13 +18,13 @@ public class Dependenceinversion {
         people.sendMessageBySMS(new SMScommunicate());
     }
 
-    static class SMScommunicate{
+    private static class SMScommunicate{
         public void sendMessage(){
             System.out.println("使用手机短信发送信息！");
         }
     }
 
-    static class People{
+    private static class People{
         public void sendMessageBySMS(SMScommunicate smScommunicate){
             smScommunicate.sendMessage();
         }
