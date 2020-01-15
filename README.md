@@ -1,4 +1,3 @@
-《[设计模式的七大原则](https://www.syshlang.com/25810b4c/#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%9A%84%E4%B8%83%E5%A4%A7%E5%8E%9F%E5%88%99)》
 
 ## 单一职责原则 (Single Responsibility Principle)
 
@@ -21,6 +20,9 @@
 接口隔离原则告诉我们在设计接口的时候要精简单一；
 迪米特法则告诉我们要降低耦合。
 而开闭原则是总纲，他告诉我们要对扩展开放，对修改关闭。
+
+- 相关博文
+ [设计模式的七大原则](https://www.syshlang.com/categories/technology/JAVA/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/)
 
 
 
