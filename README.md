@@ -22,7 +22,7 @@
 而开闭原则是总纲，他告诉我们要对扩展开放，对修改关闭。
 
 - 相关博文
- [设计模式的七大原则](https://www.syshlang.com/categories/technology/JAVA/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/)
+ [设计模式的七大原则](https://syshlang.com/categories/java/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/)
 
 
 
