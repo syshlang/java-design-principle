@@ -24,7 +24,9 @@
 - 相关博文
  [设计模式的七大原则](https://syshlang.com/categories/java/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/)
  
- GITHUB:https://github.com/syshlang/java-design-principle
+ Github地址：https://github.com/syshlang/java-design-principle
+
+ Gitee地址：https://gitee.com/syshlang/java-design-principle
 
 
 
